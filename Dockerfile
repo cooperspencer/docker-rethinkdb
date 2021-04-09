@@ -1,6 +1,5 @@
 
-ARG BASE_ARCH=amd64
-FROM ${BASE_ARCH}/debian:buster-slim
+FROM debian:buster-slim
 
 RUN apt-get -qqy update \
     && apt-get install -y g++ protobuf-compiler libprotobuf-dev \
